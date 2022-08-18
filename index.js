@@ -37,4 +37,6 @@
 //for example checking to see if a selected div has a parent div
 
 const list = document.querySelector("#book-list")
-console.log("list is parent is: ", list.parentNode)
+// console.log("list is parent is: ", list.parentNode)
+console.log("list is parent is: ", list.previousSibling)
+console.log("list is parent is: ", list.previousElementSibling)
