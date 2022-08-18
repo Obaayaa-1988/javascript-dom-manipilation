@@ -36,7 +36,23 @@
 //TRAVERSING IN THE DOM
 //for example checking to see if a selected div has a parent div
 
-const list = document.querySelector("#book-list")
+// const list = document.querySelector("#book-list")
 // console.log("list is parent is: ", list.parentNode)
-console.log("list is parent is: ", list.previousSibling)
-console.log("list is parent is: ", list.previousElementSibling)
+// console.log("list is parent is: ", list.previousSibling)
+// console.log("list is parent is: ", list.previousElementSibling)
+
+// list.previousElementSibling.querySelector("p").innerHTML += "<br>Too Cool To Have God</br>"
+
+const buttons = document.querySelectorAll(" #book-list .delete")
+// console.log(buttons)
+// buttons.addEventListener("click", () => {
+//     console.log("hello")
+
+// })
+
+Array.from(buttons).forEach(element => {
+    console.log(element)
+});
+
+
+
