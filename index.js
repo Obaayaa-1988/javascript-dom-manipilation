@@ -50,7 +50,7 @@ const buttons = document.querySelectorAll(" #book-list .delete")
 
 // })
 
-Array.from(buttons).forEach(element => {
+Array.from(buttons).forEach(function(button) {
     console.log(element)
 });
 
