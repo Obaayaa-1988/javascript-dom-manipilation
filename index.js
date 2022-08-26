@@ -43,7 +43,7 @@
 
 // list.previousElementSibling.querySelector("p").innerHTML += "<br>Too Cool To Have God</br>"
 
-const buttons = document.querySelectorAll(" #book-list .delete")
+//const buttons = document.querySelectorAll(" #book-list .delete")
 // console.log(buttons)
 // buttons.addEventListener("click", () => {
 //     console.log("hello")
@@ -54,5 +54,18 @@ Array.from(buttons).forEach(function(button) {
     console.log(element)
 });
 
+//javascript event
+const buttons = document.querySelectorAll('.delete')
+Array.from(buttons).forEach(function(button){
+button.addEventListener("click", function(e){
 
+    const li = e.target.parentElement;
+    li.parentNode.removeChild(li)
+})
+})
 
+const link = document.querySelector('#page-banner')
+link.addEventListener("click", function(e){
+    e.preventDefault();
+    console.log('navigation to ', e.target.textContent, 'was prevented')
+})
