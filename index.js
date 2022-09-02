@@ -69,3 +69,11 @@ link.addEventListener("click", function(e){
     e.preventDefault();
     console.log('navigation to ', e.target.textContent, 'was prevented')
 })
+//interacting with forms
+
+const addForm = document.forms('add-book')
+addForm.addEventListener('submit', function(e){
+    e.preventDefault()
+    const value = addForm.querySelector('input[type="text"]').value
+    console.log(value)
+})
