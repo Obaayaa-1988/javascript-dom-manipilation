@@ -69,11 +69,26 @@ link.addEventListener("click", function(e){
     e.preventDefault();
     console.log('navigation to ', e.target.textContent, 'was prevented')
 })
-//interacting with forms
+//interacting with forms ep11
 
 const addForm = document.forms('add-book')
 addForm.addEventListener('submit', function(e){
     e.preventDefault()
     const value = addForm.querySelector('input[type="text"]').value
-    console.log(value)
+    // console.log(value)
+    //create element
+    const li = document.createElement("li")
+    const bookName = document.createElement("span")
+    const deleteBtn = document.createElement("span")
+
+    //add content
+    deleteBtn.textContent = 'delete'
+    bookName.textContent = value
+    //append child
+    li.appendChild(bookName)
+    li.appendChild(deleteBtn)
+    list.appendChild(li)
+    
 })
+
+//creating elements ep12
